@@ -27,7 +27,7 @@ namespace EmployeeChristmasBonus
         {
             var workersWithGif = new int[1000];
             int numberOfWorkersWithGit = 0;
-            for (int ii = 2; ii <= 12; ii++)
+            for (int ii = 2; ii <= 1000; ii++)
             {
                 var printing = new bool[2];
                  printing[1] = true;
