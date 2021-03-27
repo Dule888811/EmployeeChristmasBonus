@@ -27,7 +27,7 @@ namespace EmployeeChristmasBonus
         {
             var workersWithGif = new int[1000];
             int numberOfWorkersWithGit = 0;
-            for (int ii = 2; ii <= 1000; ii++)
+            for (int ii = 5; ii <= 12; ii++)
             {
                 var printing = new bool[2];
                  printing[1] = true;
@@ -81,10 +81,14 @@ namespace EmployeeChristmasBonus
 
 
             }
-            Console.WriteLine("  number   {0} ", numberOfWorkersWithGit);
+            if(numberOfWorkersWithGit == 0) 
+            {
+                Console.WriteLine("  number   {0} ", numberOfWorkersWithGit);
+            }
+            Console.WriteLine("  number   {0} ", numberOfWorkersWithGit - 1);
             List<int> Workers = new List<int>();
             Workers = workersWithGif.ToList();
-            var workers = Workers.Skip(1).Take(numberOfWorkersWithGit);
+            var workers = Workers.Skip(1).Take(numberOfWorkersWithGit).Skip(1);
             foreach (int w in workers)
             {
                 Console.WriteLine("  workers   {0} ", w);
